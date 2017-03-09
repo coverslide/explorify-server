@@ -1,0 +1,26 @@
+{
+  "name": "explorify-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "js-yaml": "^3.8.2",
+    "koa": "^2.1.0",
+    "koa-browse": "^1.0.0",
+    "koa-browse-sevenzip": "^1.0.0",
+    "koa-mount": "^2.0.0",
+    "koa-static": "^3.0.0",
+    "koa2-cors-es2017": "^2.1.0",
+    "mz": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

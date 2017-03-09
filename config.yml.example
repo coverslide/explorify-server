@@ -1,0 +1,7 @@
+cross-origin: false
+port: 6080
+root: .
+archive-extensions: 
+  - zip
+  - rar
+  - tar
