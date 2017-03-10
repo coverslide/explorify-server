@@ -17,8 +17,6 @@ const crossOrigin = require('./cross-origin');
   const app = new Koa();
   const files = new Koa();
 
-  app.use(koaStatic(join(__dirname, 'public')));
-
   files.use(browse({ root: config.root }))
     .use(dirList({
       hideDotFiles: true,
@@ -32,6 +30,8 @@ const crossOrigin = require('./cross-origin');
 
   app.use(cors({ origin: crossOrigin(config['cross-origin']) }));
   app.use(mount('/files', files));
+
+  app.use(koaStatic(join(__dirname, 'public')));
 
   app.listen(process.env.PORT || config.port, process.env.HOST || config.host, function onListen() {
     process.stdout.write(`Listening on ${this.address().port}\n`);
