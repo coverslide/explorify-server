@@ -1,6 +1,6 @@
 {
   "name": "explorify-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "dependencies": {
@@ -17,6 +17,9 @@
     "eslint": "^3.17.1",
     "eslint-config-airbnb-base": "^11.1.1",
     "eslint-plugin-import": "^2.2.0"
+  },
+  "bin": {
+    "explorify-server": "./app.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

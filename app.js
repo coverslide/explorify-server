@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { join } = require('path');
 const fs = require('mz/fs');
 const Koa = require('koa');
@@ -36,4 +37,4 @@ const crossOrigin = require('./cross-origin');
   app.listen(process.env.PORT || config.port, process.env.HOST || config.host, function onListen() {
     process.stdout.write(`Listening on ${this.address().port}\n`);
   });
-})();
+})().catch(err => console.error(err.message));
