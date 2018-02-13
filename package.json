@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "",
   "main": "app.js",
+  "bin": {
+    "explorify-server": "./app.js"
+  },
   "dependencies": {
     "js-yaml": "^3.8.2",
     "koa": "^2.1.0",
@@ -10,7 +13,7 @@
     "koa-browse-sevenzip": "^1.0.0",
     "koa-mount": "^2.0.0",
     "koa-static": "^3.0.0",
-    "koa2-cors-es2017": "^2.1.0",
+    "koa2-cors": "^2.0.5",
     "mz": "^2.6.0"
   },
   "devDependencies": {
