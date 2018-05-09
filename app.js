@@ -31,6 +31,7 @@ const crossOrigin = require('./cross-origin');
 
   app.use(cors({ origin: crossOrigin(config['cross-origin']) }));
   app.use(mount('/files', files));
+  app.use(mount('/ping', (ctx) => { ctx.body = "1" }));
 
   app.use(koaStatic(join(__dirname, 'public')));
 
